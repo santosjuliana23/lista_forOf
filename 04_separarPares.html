@@ -6,9 +6,16 @@
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
     //ENTRADA
-
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let numeropar = [];
 
     //PROCESSAMENTO
+    for(itens of listaDeItens) {
+        if (itens%2 == 0) {
+            numeropar.push(itens)
+        }
+    }
+    document.write (`Lista de numeros pares: ${numeropar.join(", ")} <br> quantidade de numeros pares: ${numeropar.length} <br> quantidade de elementos da lista original: ${listaDeItens.length}`)
 
 
     //SAÍDA

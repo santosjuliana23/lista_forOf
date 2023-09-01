@@ -6,8 +6,17 @@
     //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
 
     //ENTRADA
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let nomescomvogais = [];
 
     //PROCESSAMENTO
+    for(nome of listaDeNomes) {
+        if(nome.substr(0, 1) == "A" || nome.substr(0, 1) == "E" || nome.substr(0, 1) == "I" || nome.substr(0, 1) == "O" || nome.substr(0, 1) == "U" ) {
+            nomescomvogais.push(nome)
+        }
+
+    }
+    document.write(`Nomes com vogais em ordem alfabetica: ${nomescomvogais.sort()}`)
 
     //SAÍDA
 
